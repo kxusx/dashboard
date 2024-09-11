@@ -2,14 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.chartdivs {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px; /* Add gap between boxes */
+  padding: 16px; /* Add padding around the grid */
+}
+
+.chart1, .chart2, .chart3, .chart4 {
+  background-color: var(--background);
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 8px; /* Round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  padding: 16px; /* Add padding inside the box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #f5ecec;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }

@@ -17,6 +17,11 @@ interface BarChartProps {
   };
 }
 
+const options = {
+    maintainAspectRatio: false,
+    responsive: true,
+  };
+
 const BarChart: React.FC<BarChartProps> = ({ data }) => {
   const chartData = {
     labels: data.labels,
@@ -29,7 +34,11 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
     ],
   };
 
-  return <Bar data={chartData} />;
+  return (
+    <div style={{ maxWidth: '100%', maxHeight: '100%', width: '100%', height: '500px' }}>
+  <Bar data={chartData} options={options} />
+    </div>
+  );
 };
 
 export default BarChart;

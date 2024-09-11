@@ -26,7 +26,13 @@ const LineChart: React.FC<LineChartProps> = ({ data }) => {
     ],
   };
 
-  return <Line data={chartData} />;
+  const options = {
+    maintainAspectRatio: false,
+    responsive: true,
+  };
+
+  return (<div style={{ maxWidth: '100%', maxHeight: '100%', width: '500px', height: '500px' }}>
+    <Line data={chartData} options={options}/></div>);
 };
 
 export default LineChart;

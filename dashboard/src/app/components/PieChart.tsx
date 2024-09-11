@@ -18,7 +18,13 @@ const PieChart: React.FC<PieChartProps> = ({ data }) => {
     ],
   };
 
-  return <Pie data={chartData} />;
+  const options = {
+    maintainAspectRatio: false,
+    responsive: true,
+  };
+
+  return (<div style={{ maxWidth: '100%', maxHeight: '100%', width: '500px', height: '500px' }}>
+    <Pie data={chartData} options={options}/></div>);
 };
 
 export default PieChart;

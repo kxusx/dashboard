@@ -22,26 +22,23 @@ const Dashboard = () => {
   }, [dispatch]);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-3xl font-bold text-center mb-8">Dashboard</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white p-4 rounded shadow h-80">
-          <h2 className="text-xl font-semibold mb-4">Candlestick Chart</h2>
-          <CandlestickChart data={candlestickData} />
-        </div>
-        <div className="bg-white p-4 rounded shadow h-80">
-          <h2 className="text-xl font-semibold mb-4">Line Chart</h2>
-          <LineChart data={lineData} />
-        </div>
-        <div className="bg-white p-4 rounded shadow h-80">
-          <h2 className="text-xl font-semibold mb-4">Bar Chart</h2>
-          <BarChart data={barData} />
-        </div>
-        <div className="bg-white p-4 rounded shadow h-80">
-          <h2 className="text-xl font-semibold mb-4">Pie Chart</h2>
-          <PieChart data={pieData} />
-        </div>
-      </div>
+    <div className="chartdivs">
+     
+    <div className="chart1">
+    <CandlestickChart data={candlestickData} />
+    </div>
+    
+    <div className="chart2">
+    <LineChart data={lineData} />
+    </div>
+    
+    <div className="chart3">
+    <BarChart data={barData} />
+    </div>
+
+    <div className="chart4">
+    <PieChart data={pieData} />
+    </div>
     </div>
   );
 };

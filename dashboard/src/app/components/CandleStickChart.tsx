@@ -25,7 +25,8 @@ const CandleStickChart: React.FC<CandleStickChartProps> = ({ data }) => {
     ],
   };
 
-  return <HighchartsReact highcharts={Highcharts} constructorType={'stockChart'} options={options} />;
+  return( <div style={{ maxWidth: '100%', maxHeight: '100%', width: '100%', height: '500px' }}>
+    <HighchartsReact highcharts={Highcharts} constructorType={'stockChart'} options={options} /></div>);
 };
 
 export default CandleStickChart;
