@@ -36,15 +36,14 @@
 
 ---
 
-Approach and Thought Process
-Setup:
+## Approach and Thought Process
+### Setup:
 Established a full-stack application with Next.js for the frontend and Django for the backend.
 Utilized Docker for consistent environment setup and deployment.
-Frontend Design:
+### Frontend Design:
 Implemented a responsive dashboard using Tailwind CSS.
 Arranged charts in a 2x2 grid layout for a clean and organized appearance.
-Backend API:
+### Backend API:
 Created RESTful API endpoints in Django to serve chart data.
-Ensured data is dynamically fetched and rendered in the frontend.
-State Management:
+### State Management:
 Integrated Redux for efficient state management and data flow between components.
