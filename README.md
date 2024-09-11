@@ -1,4 +1,6 @@
 ![Dashboard](./imgs/img.png)
+The above dashboard might not be the most aesthetically pleasing one but I have tried my best to fulfill the basic criterias(and most of the bonus) while learning Django over the past few hours.
+
 ## Libraries and Tools Used
 
 - **Frontend:** Next.js, Tailwind CSS
