@@ -1,28 +1,40 @@
-Libraries and Tools Used
-Frontend: Next.js, Tailwind CSS
-Backend: Django, Django REST Framework
-State Management: Redux
-Data Visualization: Chart.js
-Containerization: Docker, Docker Compose
+## Libraries and Tools Used
 
-----------------------------------------------------------------------
+- **Frontend:** Next.js, Tailwind CSS
+- **Backend:** Django, Django REST Framework
+- **State Management:** Redux
+- **Data Visualization:** Chart.js
+- **Containerization:** Docker, Docker Compose
 
-To Reproduce :
-git clone <your-fork-url>
-cd <project-directory>
-docker-compose up --build
-Open your browser and navigate to http://localhost:3000 for the frontend.
-The backend should be accessible at http://localhost:8000.
-Local Development (Optional)
-Frontend: Navigate to the dashboard directory and run:
-yarn install
-yarn dev
+---
 
-Backend: Navigate to the mybackend directory and run:
-pip install -r requirements.txt
-python manage.py runserver
+## To Reproduce
 
-----------------------------------------------------------------------
+1. **Clone the Repository:**
+   ```bash
+   git clone <your-fork-url>
+   cd <project-directory>
+   docker-compose up --build
+   ```
+
+- Open your browser and navigate to http://localhost:3000 for the frontend.
+- The backend should be accessible at http://localhost:8000.
+
+### Local Development (Optional)
+
+- Frontend: Navigate to the dashboard directory and run:
+  ```bash
+  npm install
+  npm run dev
+  ```
+- Backend: Navigate to the mybackend directory and run:
+
+    ```bash
+    pip install -r requirements.txt
+    python manage.py runserver
+    ```
+
+---
 
 Approach and Thought Process
 Setup:
