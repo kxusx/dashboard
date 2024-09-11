@@ -1,3 +1,4 @@
+![Dashboard](./imgs/img.png)
 ## Libraries and Tools Used
 
 - **Frontend:** Next.js, Tailwind CSS
