@@ -1,8 +1,7 @@
-"use client";
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface ChartState {
-  candlestickData: any[];
+  candlestickData: { x: string; open: number; high: number; low: number; close: number }[];
   lineData: { labels: string[]; data: number[] };
   barData: { labels: string[]; data: number[] };
   pieData: { labels: string[]; data: number[] };
@@ -19,16 +18,16 @@ const chartSlice = createSlice({
   name: 'charts',
   initialState,
   reducers: {
-    setCandlestickData(state, action: PayloadAction<any[]>) {
+    setCandlestickData(state, action: PayloadAction<ChartState['candlestickData']>) {
       state.candlestickData = action.payload;
     },
-    setLineData(state, action: PayloadAction<{ labels: string[]; data: number[] }>) {
+    setLineData(state, action: PayloadAction<ChartState['lineData']>) {
       state.lineData = action.payload;
     },
-    setBarData(state, action: PayloadAction<{ labels: string[]; data: number[] }>) {
+    setBarData(state, action: PayloadAction<ChartState['barData']>) {
       state.barData = action.payload;
     },
-    setPieData(state, action: PayloadAction<{ labels: string[]; data: number[] }>) {
+    setPieData(state, action: PayloadAction<ChartState['pieData']>) {
       state.pieData = action.payload;
     },
   },

@@ -1,4 +1,4 @@
-import { Chart } from 'react-chartjs-2';
+// import { Chart } from 'react-chartjs-2';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, LineElement, PointElement, LinearScale, Title, CategoryScale } from 'chart.js';
 // import { PieChartData } from 'types';
@@ -6,8 +6,9 @@ import { Chart as ChartJS, LineElement, PointElement, LinearScale, Title, Catego
 ChartJS.register(LineElement, PointElement, LinearScale, Title, CategoryScale);
 
 interface LineChartProps {
-  data: PieChartData;
-// data: {    labels: string[];data: number[] }[];
+//   data: PieChartData;
+
+data: { labels: string[]; data: number[] };
 }
 
 
