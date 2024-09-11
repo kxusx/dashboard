@@ -15,7 +15,7 @@ The above dashboard might not be the most aesthetically pleasing one but I have 
 
 1. **Clone the Repository:**
    ```bash
-   git clone <your-fork-url>
+   git clone https://github.com/kxusx/dashboard.git
    cd <project-directory>
    docker-compose up --build
    ```
